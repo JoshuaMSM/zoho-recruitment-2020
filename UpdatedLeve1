@@ -1,0 +1,37 @@
+package com.j.jo;
+import java.util.Scanner;
+public class Level1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc=new Scanner(System.in);
+String s=sc.nextLine();
+int n=s.length();
+
+for (int i = 0; i < n; i++)
+{
+int l=n/2;
+    for (int j = 1; j<= n - i; j++) 
+    { 
+    System.out.print(" ");
+    }
+    for (int k = i; k >= 0; k--)
+    {
+        System.out.print(s.charAt(l));
+        if(l>s.length()-2)
+		{
+			l=0;
+		}
+		else
+		{
+			l++;
+		}
+		
+	}
+	System.out.println();
+}
+   
+		
+	}
+
+}
